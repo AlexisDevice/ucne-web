@@ -5,8 +5,12 @@
     --text-color: #f4f4f4;
     --back-text-color: #1d1f20;
     --btn-success-color: #6a994e;
+    --amarillo: #DEB841;
 }
 
+body {
+    background-color: var(--background-color);
+}
 
 input[type="text"], input[type="password"], input[type="number"] {
     margin: 5px 0px;
