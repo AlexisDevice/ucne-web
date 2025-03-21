@@ -1,4 +1,5 @@
 import '../styles/home.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -8,5 +9,6 @@ function Home() {
         </div>
     );
 }
+// <Link to={aqui va la ruta}>texto del link</Link>
 
 export { Home };
