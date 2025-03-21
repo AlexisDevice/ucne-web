@@ -1,14 +1,7 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import '../styles/home.css';
-import { Link } from 'react-router-dom';
 
 function Home() {
-    const navigate = useNavigate();
-
-    const redireccionar = (ruta) => {
-        navigate(ruta);
-    };
-
     return (
         <div className="home-layout">
             <nav className="navbar">
@@ -23,30 +16,30 @@ function Home() {
             </nav>
 
             <div className="container">
-                <div className="cuadro" onClick={() => redireccionar("/comentarios")}>
+                <Link to={'/comentarios'} className="cuadro">
                     <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="Comentarios" className="cuadro-img" />
                     <p>Comentarios</p>
-                </div>
+                </Link>
 
-                <div className="cuadro" onClick={() => redireccionar("/asignaturas")}>
+                <Link to={'/asignaturas'} className="cuadro">
                     <img src="https://cdn-icons-png.flaticon.com/512/1177/1177464.png" alt="Asignaturas" className="cuadro-img" />
                     <p>Asignaturas</p>
-                </div>
+                </Link>
 
-                <div className="cuadro" onClick={() => redireccionar("/maestros")}>
+                <Link to={'/maestros'} className="cuadro">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTkZ35h9OnwZiaqCymLUeXOGWaw6JrHEh_Ng&s" alt="Maestros y Facultades" className="cuadro-img" />
                     <p>Maestros y Facultades</p>
-                </div>
+                </Link>
 
-                <div className="cuadro" onClick={() => redireccionar("/carreras")}>
+                <Link to={'/carreras'} className="cuadro">
                     <img src="https://utel.mx/blog/wp-content/uploads/2015/03/shutterstock_234044557-1.jpg" alt="Carreras" className="cuadro-img" />
                     <p>Carreras</p>
-                </div>
+                </Link>
 
-                <div className="cuadro" onClick={() => redireccionar("/perfil")}>
+                <Link to={'/perfil'} className="cuadro">
                     <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Perfil" className="cuadro-img" />
                     <p>Perfil</p>
-                </div>
+                </Link>
             </div>
 
         </div>
