@@ -1,0 +1,34 @@
+.login-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/ucne-login.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0px auto;
+    width: 35%;
+    height: 50%;
+    background-color: var(--glass-color);
+    border-radius: 12px;
+    border: var(--border-glass-color) 1px solid;
+}
+
+.login-box input[type="text"], .login-box input[type="password"], .login-box button {
+    margin: 5px 0px;
+    width: 75%;
+}
+
+.login-box button {
+    background-color: var(--btn-success-color);
+}
