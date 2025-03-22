@@ -9,7 +9,12 @@
 }
 
 body {
+    height: 100vh;
     background-color: var(--background-color);
+}
+
+#root {
+    height: 100%;
 }
 
 input[type="text"], input[type="password"], input[type="number"] {
