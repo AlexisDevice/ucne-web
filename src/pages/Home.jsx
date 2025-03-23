@@ -27,9 +27,9 @@ function Home() {
                     <p>Comentarios</p>
                 </Link>
 
-                <Link to={'/asignaturas'} className="cuadro">
-                    <img src={asignaturaLogo} alt="Asignaturas" className="cuadro-img" />
-                    <p>Asignaturas</p>
+                <Link to={'/materias'} className="cuadro">
+                    <img src={asignaturaLogo} alt="materias" className="cuadro-img" />
+                    <p>Materias</p>
                 </Link>
 
                 <Link to={'/maestros'} className="cuadro">
