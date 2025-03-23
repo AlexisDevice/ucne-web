@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Login } from './pages/Login.jsx';
 import { Home } from './pages/Home.jsx';
 import './styles/static.css';
+import Maestros from './pages/Maestro.jsx';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path='/comentarios' element={<h1>Comentarios</h1>} />
         <Route path='/asignaturas' element={<h1>Asignaturas</h1>} />
-        <Route path='/maestros' element={<h1>Maestros y Facultades</h1>} />
+        <Route path='/maestros' element={<Maestros/>} />
         <Route path='/carreras' element={<h1>Carreras</h1>} />
         <Route path='/perfil' element={<h1>Perfil</h1>} />
         <Route path='*' element={<h1>404</h1>} />
