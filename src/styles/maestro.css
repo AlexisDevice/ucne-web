@@ -1,0 +1,62 @@
+/* maestros.css */
+
+/* Contenedor principal */
+.maestros-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111827; /* bg-gray-900 */
+}
+
+/* Caja que contiene la información */
+.maestros-box {
+    background-color: #1f2937; /* bg-gray-800 */
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: center;
+}
+
+/* Logo y título */
+.maestros-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.maestros-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.maestros-title {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Lista de maestros */
+.maestros-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Cada maestro */
+.maestro-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #374151; /* bg-gray-700 */
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.maestro-item:hover {
+    background-color: #4b5563; /* bg-gray-600 */
+}
