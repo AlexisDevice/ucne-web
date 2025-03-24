@@ -8,16 +8,17 @@ import Nprofesor from './pages/modulo/Nprofesor.jsx';
 import { Comentario } from './pages/Comentario.jsx';
 import { Perfil } from './pages/Perfil.jsx';
 import Maestros from './pages/Maestro.jsx';
+import Materia from './pages/Materia.jsx';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h1>Hola Mundo!</h1>} />
+        <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path='/comentarios' element={<Comentario />} />
-        <Route path='/asignaturas' element={<h1>Asignaturas</h1>} />
+        <Route path='/asignaturas' element={<Materia />} />
         <Route path='/maestros' element={<Maestros/>} />
         <Route path='/carreras' element={<h1>Carreras</h1>} />
         <Route path='/perfil' element={<Perfil />} />
