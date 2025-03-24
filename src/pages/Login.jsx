@@ -20,6 +20,8 @@ function Login() {
             if (response.ok) {
                 const data = await response.json();
                 window.localStorage.setItem('token', data.token);
+                window.localStorage.setItem('user', data.userName);
+                window.localStorage.setItem('email', data.email);
                 return true;
             } else {
                 return false;
