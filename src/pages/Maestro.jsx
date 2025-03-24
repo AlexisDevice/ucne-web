@@ -7,7 +7,7 @@ function Maestros() {
 
     /* obtener maestros desde la api */
     useEffect(() => {
-        fetch('http://localhost:5062/api/maestros')
+        fetch('http://localhost:5062/api/Profesors')
             .then(response => response.json())
             .then(data => setMaestros(data));
     }, []);

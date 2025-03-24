@@ -4,21 +4,17 @@ function Nprofesor() {
     const [name, setName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
-    const [profesor, setProfesor] = useState({
-        nombre: '',
-        apellido: '',
-        correo: ''
-    });
+    const [profesor, setProfesor] = useState({});
 
     const handleSubmitControl = async (e) => {
         e.preventDefault();
         setProfesor({
-            name: name,
+            nombre: name,
             apellido: lastName,
             correo: email
         });
 
-        await fetch('http://localhost:5062/api/profesors', {
+        await fetch('http://localhost:5062/api/Profesors', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
