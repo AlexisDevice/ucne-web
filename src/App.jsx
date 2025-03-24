@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Login } from './pages/Login.jsx';
+import Signup from './pages/Signup.jsx';
 import { Home } from './pages/Home.jsx';
 import './styles/static.css';
 import Modulo from './pages/modulo/Modulo.jsx';
@@ -14,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path='/comentarios' element={<Comentario />} />
