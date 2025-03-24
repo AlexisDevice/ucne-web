@@ -6,6 +6,14 @@ function Nmateria() {
     const [desc, setDesc] = useState('');
     const [materia, setMateria] = useState({});
 
+    function seGuardo() {
+        alert('Se guardo la materia');
+        /* limpiart todos los campos */
+        setName('');
+        setCode('');
+        setDesc('');
+    }
+
     const handleSubmitControl = async (e) => {
         e.preventDefault();
         setMateria({
@@ -20,8 +28,9 @@ function Nmateria() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(materia)});
+        seGuardo();
     };
-    
+
     return (
         <form onSubmit={handleSubmitControl}>
             <input type="text" placeholder="Nombre de la materia" id="materaName"
