@@ -4,11 +4,7 @@ function Nmateria() {
     const [name, setName] = useState('');
     const [code, setCode] = useState('');
     const [desc, setDesc] = useState('');
-    const [materia, setMateria] = useState({
-        nombre: '',
-        codigo: '',
-        descripcion: ''
-    });
+    const [materia, setMateria] = useState({});
 
     const handleSubmitControl = async (e) => {
         e.preventDefault();
@@ -18,13 +14,14 @@ function Nmateria() {
             descripcion: desc
         });
 
-        await fetch('http://localhost:5062/api/materias', {
+        await fetch('http://localhost:5062/api/Materias', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(materia)});
     };
+    
     return (
         <form onSubmit={handleSubmitControl}>
             <input type="text" placeholder="Nombre de la materia" id="materaName"
@@ -37,7 +34,7 @@ function Nmateria() {
                 <button type="submit" className="btn-success">Guardar</button>
             </div>
         </form>
-    )
+    );
 }
 
 export default Nmateria;

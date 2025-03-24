@@ -28,10 +28,10 @@ function Maestros() {
                     </h1>
                 </div>
                 <div className="maestros-list">
-                    {maestros.map((maestro, index) => (
-                        <div key={index} className="maestro-item">
-                            <span>{maestro.nombre}</span>
-                            <span>{maestro.carrera}</span>
+                    {maestros.map((maestro) => (
+                        <div key={maestro.id} className="maestro-item">
+                            <span>{maestro.nombre + " " + maestro.apellido}</span>
+                            <span>{maestro.correo}</span>
                         </div>
                     ))}
                 </div>
