@@ -20,6 +20,7 @@ function Nprofesor() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(profesor)});
+        alert('Profesor guardado');
     }
     
     return (

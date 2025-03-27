@@ -50,7 +50,7 @@ function Signup() {
                 value={username} placeholder="Correo" />
                 <input type="password" id='user-password' onChange={ (e) => setPassword(e.target.value) }
                 value={password} placeholder="Password" />
-                <button type='submit'>Ingresar</button>
+                <button type='submit'>Registrarse</button>
                 <Link className="like-button t-info b-info" to="/login">Iniciar sesión</Link>
             </form>
         </div>

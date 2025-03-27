@@ -1,35 +1,35 @@
 import { useState } from "react";
 
-function Nmateria() {
+function Ncarrera() {
     const [name, setName] = useState('');
     const [code, setCode] = useState('');
     const [desc, setDesc] = useState('');
-    const [materia, setMateria] = useState({});
+    const [carrera, setCarrera] = useState({});
 
 
     const handleSubmitControl = async (e) => {
         e.preventDefault();
-        setMateria({
+        setCarrera({
             nombre: name,
             codigo: code,
             descripcion: desc
         });
 
-        await fetch('http://localhost:5062/api/Materias', {
+        await fetch('http://localhost:5062/api/Carreras', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(materia)});
-        alert('Materia guardada');
+        body: JSON.stringify(carrera)});
+        alert('Carrera guardada');
     };
 
     return (
         <form onSubmit={handleSubmitControl}>
-            <input type="text" placeholder="Nombre de la materia" id="materaName"
+            <input type="text" placeholder="Nombre de la carrera" id="materaName"
             onChange={(e) => setName(e.target.value)} required />
-            <input type="text" placeholder="Codigo de la materia" id="materiaCode"
-            onChange={(e) => setCode(e.target.value)} required />
+            <input type="text" placeholder="Codigo" id="materiaCode"
+            onChange={(e) => setCode(e.target.value)} />
             <textarea placeholder="Descripcion" id="materiaDesc"
             onChange={(e) => setDesc(e.target.value)} required></textarea>
             <div className="options-reverse">
@@ -39,4 +39,4 @@ function Nmateria() {
     );
 }
 
-export default Nmateria;
+export default Ncarrera;

@@ -167,6 +167,10 @@ p, span, a, button, label {
     font-size: calc(0.75vw + 1vh);
 }
 
+.f-med {
+    font-size: calc(1vw + 1vh);
+}
+
 /* border */
 
 .b-danger {

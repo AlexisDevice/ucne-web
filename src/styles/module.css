@@ -15,6 +15,9 @@
 }
 
 .module-container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 16px 0px;
     width: 100%;
     border-bottom: 1px solid var(--border-glass-color);
