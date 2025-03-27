@@ -29,7 +29,7 @@ function Maestros() {
                 </div>
                 <div className="maestros-list">
                     {maestros.map((maestro) => (
-                        <div key={maestro.id} className="maestro-item">
+                        <div key={maestro.profesorId} className="maestro-item">
                             <span>{maestro.nombre + " " + maestro.apellido}</span>
                             <span>{maestro.correo}</span>
                         </div>

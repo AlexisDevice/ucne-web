@@ -28,7 +28,7 @@ function Materia() {
                     </div>
                     <div className="maestros-list">
                         {materias.map((materia) => (
-                            <div key={materia.id} className="maestro-item">
+                            <div key={materia.materiaId} className="maestro-item">
                                 <span>{materia.nombre}</span>
                                 <span>{carrera.codigo}</span>
                             </div>
