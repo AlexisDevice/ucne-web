@@ -10,6 +10,8 @@ import { Comentario } from './pages/Comentario.jsx';
 import { Perfil } from './pages/Perfil.jsx';
 import Maestros from './pages/Maestro.jsx';
 import Materia from './pages/Materia.jsx';
+import Ncarrera from './pages/modulo/Ncarrera.jsx';
+import Carrera from './pages/Carrera.jsx';
 
 function App() {
   return (
@@ -19,13 +21,14 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path='/comentarios' element={<Comentario />} />
-        <Route path='/asignaturas' element={<Materia />} />
+        <Route path='/materias' element={<Materia />} />
         <Route path='/maestros' element={<Maestros/>} />
-        <Route path='/carreras' element={<h1>Carreras</h1>} />
+        <Route path='/carreras' element={<Carrera />} />
         <Route path='/perfil' element={<Perfil />} />
         <Route path='/module' element={<Modulo />}>
           <Route path='new/materia' element={<Nmateria />} />
           <Route path='new/profesor' element={<Nprofesor />} />
+          <Route path='new/carrera' element={<Ncarrera />} />
         </Route>
         <Route path='*' element={<h1>404</h1>} />
       </Routes>
