@@ -30,7 +30,7 @@ function Materia() {
                         {materias.map((materia) => (
                             <div key={materia.materiaId} className="maestro-item">
                                 <span>{materia.nombre}</span>
-                                <span>{carrera.codigo}</span>
+                                <span>{materia.codigo}</span>
                             </div>
                         ))}
                     </div>

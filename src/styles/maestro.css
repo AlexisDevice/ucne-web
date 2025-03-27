@@ -11,10 +11,20 @@
 .maestros-box {
     background-color: #1f2937; /* bg-gray-800 */
     padding: 24px;
-    border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 450px;
+    max-width: 70%;
+    max-height: 80vh;
     text-align: center;
+    overflow-y: scroll;
+}
+
+.maestros-box::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+.maestros-box::-webkit-scrollbar-thumb {
+    background-color: var(--border-glass-color);
+    border-radius: 2px;
 }
 
 /* Logo y título */
