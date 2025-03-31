@@ -1,0 +1,26 @@
+@media screen and (max-width: 1000px) {
+
+    .login-bg {
+        background-image: none;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+
+    .home-layout {
+        width: 100%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .module-template .module-container {
+        width: 95%;
+    }
+
+    .maestros-box {
+        width: 95%;
+    }
+}

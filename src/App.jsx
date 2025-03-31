@@ -13,6 +13,7 @@ import Materia from './pages/Materia.jsx';
 import Ncarrera from './pages/modulo/Ncarrera.jsx';
 import Carrera from './pages/Carrera.jsx';
 import Ncomentario from './pages/modulo/Ncomentario.jsx';
+import './styles/responsive.css';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path='/maestros' element={<Maestros/>} />
         <Route path='/carreras' element={<Carrera />} />
         <Route path='/perfil' element={<Perfil />} />
-        <Route path='/module' element={<Modulo />}>
+        <Route path='/module' element={<Modulo />} >
           <Route path='new/materia' element={<Nmateria />} />
           <Route path='new/profesor' element={<Nprofesor />} />
           <Route path='new/carrera' element={<Ncarrera />} />

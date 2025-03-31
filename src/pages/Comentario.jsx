@@ -14,7 +14,7 @@ function Comentario() {
         <div className="module-template">
             <div className="module-container">
                 <header>
-                    <h1>Registrar nuevo</h1>
+                    <Link to={'/home'} className='like-button b-info'>Ir a home</Link>
                     <Link to={'/module/new/comentario'} className='like-button btn-success'>Nuevo comentario</Link>
                 </header>
                 <div className="list-comentarios">

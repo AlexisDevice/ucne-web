@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import logo from '../assets/logoUCNE.png';
+import { Link } from "react-router-dom";
 
 function Carrera() {
     const [carreras, setCarreras] = useState([]);
@@ -15,6 +16,7 @@ function Carrera() {
         <div className="maestros-container">
             <div className="maestros-box">
                 <div className="maestros-header">
+                <Link to={'/home'} className='like-button b-info'>Ir al home</Link>
                     <img 
                         src={logo}
                         alt="UCNE Logo" 

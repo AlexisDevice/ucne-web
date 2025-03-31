@@ -17,6 +17,8 @@ function Ncomentario() {
             usuarioId: window.localStorage.getItem('userId'),
             materiaId: codigo
         })});
+        setCodigo('');
+        setContenido('');
         alert('Comentario guardado');
     };
 
