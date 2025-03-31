@@ -7,7 +7,7 @@ function Maestros() {
 
     /* obtener maestros desde la api */
     useEffect(() => {
-        fetch('http://localhost:5062/api/Profesors')
+        fetch(import.meta.env.VITE_Server + '/profesores')
             .then(response => response.json())
             .then(data => setMaestros(data));
     }, []);

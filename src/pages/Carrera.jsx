@@ -6,7 +6,7 @@ function Carrera() {
 
     /* obtener maestros desde la api */
     useEffect(() => {
-        fetch('http://localhost:5062/api/Carreras')
+        fetch(import.meta.env.VITE_Server + '/carreras')
             .then(response => response.json())
             .then(data => setCarreras(data));
     }, []);

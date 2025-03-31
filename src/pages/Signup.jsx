@@ -5,17 +5,18 @@ import { Link } from "react-router-dom";
 
 function Signup() {
     const [realname, setRealname] = useState('');
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [matricula, setMatricula] = useState('');
 
     async function createUser() {
         try {
-            const response = await fetch('http://localhost:5062/api/auth/register', {
+            const response = await fetch(import.meta.env.VITE_Server + '/auth/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ userName: realname, email: username, password })
+                body: JSON.stringify({ user_name: realname, matricula, email, password })
             });
 
             if (response.ok) {
@@ -46,8 +47,10 @@ function Signup() {
                 <h1>Registrarse</h1>
                 <input type="text" id="realname" onChange={ (e) => setRealname(e.target.value) }
                 value={realname} placeholder="Nombre completo" />
-                <input type="text" id='username' onChange={ (e) => setUsername(e.target.value) }
-                value={username} placeholder="Correo" />
+                <input type="text" id="matricula" onChange={ (e) => setMatricula(e.target.value) }
+                value={matricula} placeholder="Matricula" />
+                <input type="text" id='username' onChange={ (e) => setEmail(e.target.value) }
+                value={email} placeholder="Correo" />
                 <input type="password" id='user-password' onChange={ (e) => setPassword(e.target.value) }
                 value={password} placeholder="Password" />
                 <button type='submit'>Registrarse</button>

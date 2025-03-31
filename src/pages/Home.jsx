@@ -6,6 +6,7 @@ import maestroLogo from '../assets/person-workspace.svg';
 import carrerasLogo from '../assets/award-fill.svg';
 import personLogo from '../assets/person.svg';
 import ucneLogo from '../assets/logoUCNE.png';
+import exitLogo from '../assets/box-arrow-left.svg';
 
 function Home() {
     return (
@@ -45,6 +46,11 @@ function Home() {
                 <Link to={'/perfil'} className="cuadro">
                     <img src={personLogo} alt="Perfil" className="cuadro-img" />
                     <p>Perfil</p>
+                </Link>
+
+                <Link to={'/login'} className="cuadro">
+                    <img src={exitLogo} alt="salir" className="cuadro-img" />
+                    <p>Cerrar sesion</p>
                 </Link>
             </div>
         </div>

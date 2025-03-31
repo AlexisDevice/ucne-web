@@ -1,0 +1,22 @@
+.card {
+    margin: 1vh 0px;
+    padding: 3vh;
+    width: 100%;
+    background-color: var(--glass-color);
+    border-radius: 12px;
+}
+
+.card .card-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--border-glass-color);
+}
+
+.card .card-header span {
+    font-weight: bold;
+}
+
+.card .card-body {
+    margin-top: 16px;
+}

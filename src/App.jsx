@@ -12,6 +12,7 @@ import Maestros from './pages/Maestro.jsx';
 import Materia from './pages/Materia.jsx';
 import Ncarrera from './pages/modulo/Ncarrera.jsx';
 import Carrera from './pages/Carrera.jsx';
+import Ncomentario from './pages/modulo/Ncomentario.jsx';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='new/materia' element={<Nmateria />} />
           <Route path='new/profesor' element={<Nprofesor />} />
           <Route path='new/carrera' element={<Ncarrera />} />
+          <Route path='new/comentario' element={ <Ncomentario />} />
         </Route>
         <Route path='*' element={<h1>404</h1>} />
       </Routes>

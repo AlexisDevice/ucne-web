@@ -4,9 +4,8 @@ import logo from '../assets/logoUCNE.png';
 function Materia() {
     const [materias, setMaterias] = useState([]);
     
-        /* obtener maestros desde la api */
         useEffect(() => {
-            fetch('http://localhost:5062/api/Materias')
+            fetch(import.meta.env.VITE_Server + '/materias')
                 .then(response => response.json())
                 .then(data => setMaterias(data));
         }, []);
@@ -29,6 +28,7 @@ function Materia() {
                     <div className="maestros-list">
                         {materias.map((materia) => (
                             <div key={materia.materiaId} className="maestro-item">
+                                <span>{materia.materiaId}</span>
                                 <span>{materia.nombre}</span>
                                 <span>{materia.codigo}</span>
                             </div>
