@@ -7,7 +7,7 @@ function Perfil() {
     useEffect(() => {
             fetch(import.meta.env.VITE_Server + '/usuario/' + localStorage.getItem('userId'))
                 .then(response => response.json())
-                .then(data => setUser(data[0]));
+                .then(data => setUser(data));
         }, []);
 
     return (
